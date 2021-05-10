@@ -8,5 +8,9 @@ spring:
     url: jdbc:h2:tcp://localhost/~/test
     username: sa
   jpa:
+    # 실행되는 SQL을 콘솔에 출력
     show-sql: true
 
+    # 애플리케이션 실행 시점에 데이터베이스 테이블을 자동으로 생성.
+#    hibernate:
+#      ddl-auto: create
