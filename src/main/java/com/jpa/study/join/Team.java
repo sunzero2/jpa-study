@@ -19,6 +19,11 @@ public class Team {
     private String id;
     private String name;
 
-    @OneToMany(mappedBy = "TEAM")
+    @OneToMany(mappedBy = "team")
     private List<Member> members;
+
+    public Team(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

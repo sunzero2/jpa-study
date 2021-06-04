@@ -17,6 +17,7 @@ public class Member {
     @Column(name = "MEMBER_ID")
     private String id;
     private String username;
+    private int age;
 
     @ManyToOne
     // name : 매핑할 외래키 이름(컬럼 이름이 같으면 name만, 컬럼 이름이 다르면 referencedColumnName에 매핑할 테이블의 기본키
